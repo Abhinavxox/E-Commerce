@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Ray-Ban</title>
+<!-- add icon link -->
+<link rel="icon" type="image/png" href="images/S.png">
+<style>
+    .my-form .btn-default {
+        border-radius: 5;
+    }
+    .my-form .form-control {
+        border-radius: 5;
+    }
+   
+</style>
+
+</head>
+
+<body>
+	<!-- Header -->
+	<div th:insert="Header.html"></div>
+	<br>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div>
+			<h1>Feedback</h1>
+		</div>
+		<br />
+		<div class="row">
+			<div class="col-md-6">
+				<div id="googlemap">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7065.6580713035555!2d85.33826040844582!3d27.691678455872516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19921f6d004b%3A0x5a017eef8b2df616!2sShantinagar%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1621600140326!5m2!1sen!2snp"
+						width="100%" height="400" style=" border:0;" allowfullscreen=""
+						loading="lazy"></iframe>
+				</div>
+			</div>
+			<br />
+			<div class="col-md-6">
+				<form class="my-form" action="/contacts" method="post">
+					<div class="form-group">
+						<label for="form-name">Name</label> <input type="text"
+							class="form-control" id="form-name" name="name" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="form-email">Email Address</label> <input type="email"
+							class="form-control" id="form-email" name="email" placeholder="Email Address">
+					</div>
+					<div class="form-group">
+						<label for="form-subject">Telephone</label> <input type="text"
+							class="form-control" id="form-subject" name="phone" placeholder="Telephone">
+					</div>
+					<div class="form-group">
+						<label for="form-message">Email your Message</label>
+						<textarea class="form-control" id="form-message"
+							placeholder="Message" name="message"></textarea>
+					</div>
+					<button class="btn btn-lg btn-secondary btn-block text-uppercase" type="submit">Contact Us</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div>
+			<h1>Our Outlet Locations</h1>
+		</div>
+		<br>
+		<div class="column main">
+		<p><span style="color: #00ccff;">New Road Outlet</span></p>
+		<p><b>Address : </b>Ganabahal , Kichapokhari , New Road, Arniko Complex</p>
+		<p><b>Contact no : </b> 9851-213-596</p>
+		<p><b>Google Map</b> <a href = "https://g.page/newmewnewroad?share"> <span style="color: #00ccff;"> Location </span> </a></p>
+		<hr />
+		<p><span style="color: #00ccff;">Pokhara Outlet</span></p>
+		<p><b>Address : </b> Chipledhunga , Trade Mall , Ground Floor</p>
+		<p><b>Contact no : </b> 9856-079-555</p>
+		<p><b>Google Map</b> <a href = "https://goo.gl/maps/qKkaqB9uh1RvNfwT6"> <span style="color: #00ccff;"> Location </span> </a></p>
+		<hr />
+		<p><span style="color: #00ccff;">Butwal Outlet</span></p>
+		
+		<p><b>Address : </b>Tinkune Chow, Srijana Mart</p>
+		<p><b>Contact no : </b>9811-927-397</p>
+		<p><b>Google Map</b> <a href = "https://goo.gl/maps/qKkaqB9uh1RvNfwT6"> <span style="color: #00ccff;"> Location </span> </a></p>
+		<hr />
+		<p><span style="color: #00ccff;">Office Location</span></p>
+		<p><b>Address : </b>Mid-Baneshwor , 200m opposite of Venus Hospital (EAST)</p>
+		<p><b>Contact no : </b>9851-200-990</p>
+		<p><b>Google Map</b> <a href = "https://goo.gl/maps/qKkaqB9uh1RvNfwT6"> <span style="color: #00ccff;"> Location </span> </a></p>
+		<hr />
+		<p><span style="color: #00ccff;">New Baneshwor Outlet</span></p>
+		<p><b>Address : </b>New Baneshwor , Sankahmul Marg , Opposite to Aryal Hotel</p>
+		<p><b>Contact no : </b> 9851-213-595</p>
+		<p><b>Google Map</b> <a href = "https://goo.gl/maps/gKP3oyjGMVQ6M3K88"> <span style="color: #00ccff;"> Location </span> </a></p>
+		<hr />
+		<p><span style="color: #00ccff;">Chitwan Outlet</span></p>
+		<p><b>Address : </b>Chitwan, Pragatipath</p>
+		<p><b>Contact no : </b> 056-533480</p>
+			<p><b>Google Map</b> <a href = "https://goo.gl/maps/urtVcDPwPi7xg1Vm7"> <span style="color: #00ccff;"> Location </span> </a></p>
+		<hr />
+		<p><span style="color: #00ccff;">Itahari Outlet</span></p>
+		<p><p><b>Address : </b> Itahari , Sky plaza</p>
+		<p><b>Contact no : </b>9827-023-489</p>	
+		<p><b>Google Map</b> <a href = "https://maps.app.goo.gl/t3RSDePmzb3ngd5q7"> <span style="color: #00ccff;"> Location </span> </a></p>
+		<hr />
+		<p><span style="color: #00ccff;">Dharan Outlet</span></p>
+		<p><b>Address : </b> Putali Line, Maskey complex,
+		Next to Vinayak Digital </p>
+		<p><b>Contact no : </b>9819-358-689</p>
+		<p><b>Google Map</b> <a href = "https://maps.app.goo.gl/t3RSDePmzb3ngd5q7"> <span style="color: #00ccff;"> Location </span> </a></p>
+		</div>
+	</div>
+	<br>
+
+<!-- Footer -->
+<div th:insert="Footer.html"></div>
+</body>
+
+</html>

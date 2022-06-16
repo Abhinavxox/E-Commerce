@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Ray-Ban</title>
+  <!-- add icon link -->
+  <link rel = "icon" type = "image/png" href = "images/S.png">
+
+</head>
+
+<body>
+<!-- Header -->
+  <div th:insert="Header.html"></div>
+
+	  <!-- Header -->
+  <div th:insert="Header.html"></div>
+	<br>
+	<br>
+	<!-- Page Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-xl-9 mx-auto">
+				<div class="card card-signin flex-row my-5">
+					<div class="card-img-left d-none d-md-flex">
+						<!-- Background image for card set in CSS! -->
+					</div>
+					<div class="card-body">
+						<h5 class="card-title text-center">Register</h5>
+						<form class="form-signin" method="post" action="/signup">
+							<div class="form-label-group">
+								<input type="text" name="username" class="form-control"
+									placeholder="Username" required autofocus> <label
+									for="inputUserame">Username</label>
+							</div>
+
+							<div class="form-label-group">
+								<input type="email" name="email" class="form-control"
+									placeholder="Email address" required> <label
+									for="inputEmail">Email address</label>
+							</div>
+
+							<div class="form-label-group">
+								<input type="text" name="password" class="form-control"
+									placeholder="Password" required> <label
+									for="inputPassword">Password</label>
+							</div>
+
+							<button class="btn btn-lg btn-primary btn-block text-uppercase"
+								type="submit">Register</button>
+							<p class="d-block text-center mt-2 small">Already have an account? <a href="/login">Log In</a></p>
+							<hr class="my-4">
+							<button class="btn btn-lg btn-google btn-block text-uppercase"
+								type="submit">
+								<i class="fab fa-google mr-2" style="color: white;"></i> Sign up with Google
+							</button>
+							<button class="btn btn-lg btn-facebook btn-block text-uppercase"
+								type="submit">
+								<i class="fab fa-facebook-f mr-2" style="color: white;"></i> Sign up with Facebook
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /.container -->
+
+  <!-- Footer -->
+  <div th:insert="Footer.html"></div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

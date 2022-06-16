@@ -1,0 +1,95 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">	
+	<footer class="py-5 bg-dark">
+		<div class="container py-5" style="color: white;">
+			<div class="row py-4">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<img src="img/logo.png" alt="" width="180" class="mb-3">
+					<h6 class="text-uppercase font-weight-bold mb-4">Ray-Ban</h6>
+					<p class="font-italic text-muted">GENUINE SINCE 1937.</p>
+					<ul class="list-inline mt-4">
+						<li class="list-inline-item"><a href="#" target="_blank"
+							title="twitter"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"
+							title="facebook"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"
+							title="instagram"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"
+							title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"
+							title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+					<h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+					<ul class="list-unstyled mb-0">
+						<li class="mb-2"><a href="/women" class="text-muted">For
+								Women</a></li>
+						<li class="mb-2"><a href="/men" class="text-muted">For
+								Men</a></li>
+						<li class="mb-2"><a href="/kids" class="text-muted">For
+								Kids</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+					<h6 class="text-uppercase font-weight-bold mb-4">Policies</h6>
+					<ul class="list-unstyled mb-0">
+						<li class="mb-2"><a href="#" class="text-muted">Terms and
+								Conditions</a></li>
+						<li class="mb-2"><a href="#" class="text-muted">Delivery</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-lg-0">
+					<h6 class="text-uppercase font-weight-bold mb-4">Contact</h6>
+					<p class="text-muted mb-4">Main office, Shantinagar, Kathmandu</p>
+					<p class="text-muted mb-4">+977 9841085450</p>
+					<p class="text-muted mb-4">meronaamabhinav@gmail.com</p>
+					<div class="p-1 rounded border">
+						<div class="input-group">
+							<input type="email" name="to" placeholder="Enter your email address"
+								aria-describedby="button-addon1"
+								class="form-control border-0 shadow-0" id="sendmail">
+							<div class="input-group-append">
+								<button
+								onclick="sendEmail()" 
+								id="button-addon1" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter">
+									<i class="fa fa-paper-plane" style="color: #EE171F"></i>
+								</button>
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color: black;">
+								  <div class="modal-dialog modal-dialog-centered" role="document">
+								    <div class="modal-content"> 
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLongTitle">Get Notifications</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <form action="/contact" method="post">
+								      <div class="modal-body">
+								      <script type="text/javascript">
+								      function sendEmail(){
+								    	  var email = document.getElementById('sendmail');
+								    	  var getemail = document.getElementById('getmail');
+								    	  getmail.value = email.value;
+								      }
+								      </script>
+								        <input type="text" class="form-control" id="getmail" name="to">
+								        Get Notifications and feeds from us.								      
+								        </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								        <button type="submit" class="btn btn-primary">Accept</button>
+								      </div>
+								      </form>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</footer>
+</html>
